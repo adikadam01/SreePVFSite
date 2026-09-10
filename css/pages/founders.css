@@ -1,0 +1,51 @@
+/* css/pages/founders.css — page-unique overrides for founders.html.
+   Bio-list bullets and the founder photo/memberships treatment aren't used anywhere else yet,
+   so they live here rather than in components.css (per WEBSITE-STANDARDS.md §5 — page-unique
+   overrides only, loaded last). */
+
+.founder-profile {
+  padding-bottom: var(--space-6);
+  margin-bottom: var(--space-6);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.founder-profile:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.founder-photo {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.founder-profile h3 {
+  color: var(--color-accent);
+  margin-top: var(--space-5);
+}
+
+.info-list li {
+  position: relative;
+  padding-left: var(--space-4);
+  margin-bottom: var(--space-3);
+}
+
+.info-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+
+.info-list strong {
+  color: var(--color-text);
+}
+
+.memberships-row {
+  margin-top: var(--space-4);
+}
