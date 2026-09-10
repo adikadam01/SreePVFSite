@@ -92,9 +92,19 @@
 .contact-tabs .nav-link.active {
   color: var(--color-text);
   background: none;
-  border-color: var(--color-accent); /* Bootstrap's nav-tabs default gives .active a lighter
-    bottom border to look "connected" to the pane below — this site's live design keeps the full
-    accent-colored box on every tab regardless of active state, so it's forced back here. */
+  position: relative;
+  border-color: var(--color-text); /* the active tab's box border switches from accent to the
+    body-text color (near-black) on the live site, plus a blue underline bar below it (::after) */
+}
+
+.contact-tabs .nav-link.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  height: 3px;
+  background: #375FC4;
 }
 
 .contact-tab-content {
