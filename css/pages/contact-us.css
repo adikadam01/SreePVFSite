@@ -57,16 +57,31 @@
   color: var(--color-white);
 }
 
-/* Address / Call Us / Queries tabs */
+/* Address / Call Us / Queries tabs — the whole nav+content block sits inside one bordered box on
+   the live site (a 2.4px solid outline in the body-text color), with each tab itself drawn as its
+   own bordered box (adjacent 1px accent-colored borders collapsed via negative margin so they read
+   as dividers, not double lines). */
+
+.contact-tabs-box {
+  border: 2.4px solid var(--color-text);
+  padding: var(--space-5) var(--space-4);
+}
 
 .contact-tabs {
   justify-content: center;
-  border-bottom: 1px solid var(--color-accent);
+  border-bottom: none;
   margin-bottom: var(--space-5);
 }
 
+.contact-tabs .nav-item:not(:first-child) {
+  margin-left: -1px;
+}
+
 .contact-tabs .nav-link {
-  border: none;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  border: 1px solid var(--color-accent);
   border-radius: 0;
   font-weight: 700;
   font-size: 19px;
@@ -77,6 +92,9 @@
 .contact-tabs .nav-link.active {
   color: var(--color-text);
   background: none;
+  border-color: var(--color-accent); /* Bootstrap's nav-tabs default gives .active a lighter
+    bottom border to look "connected" to the pane below — this site's live design keeps the full
+    accent-colored box on every tab regardless of active state, so it's forced back here. */
 }
 
 .contact-tab-content {

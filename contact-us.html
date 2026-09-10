@@ -72,44 +72,47 @@
           </div>
         </div>
 
-        <!-- Address / Call Us / Queries tabs, matching the live site's tab widget (Address active
-             by default). Reuses Bootstrap's own tab component — already loaded, no new JS. -->
-        <ul class="nav nav-tabs contact-tabs" id="contactTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="tab-address-btn" data-bs-toggle="tab" data-bs-target="#tab-address" type="button" role="tab" aria-controls="tab-address" aria-selected="true">Address</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="tab-call-btn" data-bs-toggle="tab" data-bs-target="#tab-call" type="button" role="tab" aria-controls="tab-call" aria-selected="false">Call Us</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="tab-queries-btn" data-bs-toggle="tab" data-bs-target="#tab-queries" type="button" role="tab" aria-controls="tab-queries" aria-selected="false">Queries</button>
-          </li>
-        </ul>
-        <div class="tab-content contact-tab-content" id="contactTabContent">
+        <!-- Address / Call Us / Queries tabs, matching the live site's tab widget: the whole
+             nav+content block sits inside one bordered box, Address active by default. Reuses
+             Bootstrap's own tab component — already loaded, no new JS. -->
+        <div class="contact-tabs-box">
+          <ul class="nav nav-tabs contact-tabs" id="contactTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="tab-address-btn" data-bs-toggle="tab" data-bs-target="#tab-address" type="button" role="tab" aria-controls="tab-address" aria-selected="true"><i class="bi bi-person-vcard"></i> Address</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-call-btn" data-bs-toggle="tab" data-bs-target="#tab-call" type="button" role="tab" aria-controls="tab-call" aria-selected="false"><i class="bi bi-telephone"></i> Call Us</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-queries-btn" data-bs-toggle="tab" data-bs-target="#tab-queries" type="button" role="tab" aria-controls="tab-queries" aria-selected="false"><i class="bi bi-envelope"></i> Queries</button>
+            </li>
+          </ul>
+          <div class="tab-content contact-tab-content" id="contactTabContent">
 
-          <div class="tab-pane fade show active" id="tab-address" role="tabpanel" aria-labelledby="tab-address-btn">
-            <p class="tab-eyebrow mb-2"><span class="text-accent">Office</span> Address</p>
-            <p class="fw-bold mb-1">Sree Padmavathi Venkateswara Foundation</p>
-            <address class="mb-0" data-address-text>40-3-13, Gummadi Raja Gopala Rao Street, M.G. Road, Vijayawada-520 010, Andhra Pradesh, India</address>
-          </div>
-
-          <div class="tab-pane fade" id="tab-call" role="tabpanel" aria-labelledby="tab-call-btn">
-            <div class="tel-list">
-              <a href="tel:+918662439567">+91-0866-243 9567</a>
-              <a href="tel:+919866656456" data-phone-link data-phone-text>+91-9866656456</a>
+            <div class="tab-pane fade show active" id="tab-address" role="tabpanel" aria-labelledby="tab-address-btn">
+              <p class="tab-eyebrow mb-2"><span class="text-accent">Office</span> Address</p>
+              <p class="fw-bold mb-1">Sree Padmavathi Venkateswara Foundation</p>
+              <address class="mb-0" data-address-text>40-3-13, Gummadi Raja Gopala Rao Street, M.G. Road, Vijayawada-520 010, Andhra Pradesh, India</address>
             </div>
-          </div>
 
-          <div class="tab-pane fade" id="tab-queries" role="tabpanel" aria-labelledby="tab-queries-btn">
-            <div class="query-list">
-              <p>General Queries: <a href="mailto:sreepvfkrishna@gmail.com" data-email-link data-email-text>sreepvfkrishna@gmail.com</a></p>
-              <p>Award Queries: <a href="mailto:sreepvfawards@gmail.com">sreepvfawards@gmail.com</a></p>
-              <p>Grant Queries:</p>
-              <p>(Biomedical Sciences) &ndash; <a href="mailto:sreepvfgrants@gmail.com">sreepvfgrants@gmail.com</a></p>
-              <p class="mb-0">(Agricultural Sciences) &ndash; <a href="mailto:sreepvf.agriculture@gmail.com">sreepvf.agriculture@gmail.com</a></p>
+            <div class="tab-pane fade" id="tab-call" role="tabpanel" aria-labelledby="tab-call-btn">
+              <div class="tel-list">
+                <a href="tel:+918662439567">+91-0866-243 9567</a>
+                <a href="tel:+919866656456" data-phone-link data-phone-text>+91-9866656456</a>
+              </div>
             </div>
-          </div>
 
+            <div class="tab-pane fade" id="tab-queries" role="tabpanel" aria-labelledby="tab-queries-btn">
+              <div class="query-list">
+                <p>General Queries: <a href="mailto:sreepvfkrishna@gmail.com" data-email-link data-email-text>sreepvfkrishna@gmail.com</a></p>
+                <p>Award Queries: <a href="mailto:sreepvfawards@gmail.com">sreepvfawards@gmail.com</a></p>
+                <p>Grant Queries:</p>
+                <p>(Biomedical Sciences) &ndash; <a href="mailto:sreepvfgrants@gmail.com">sreepvfgrants@gmail.com</a></p>
+                <p class="mb-0">(Agricultural Sciences) &ndash; <a href="mailto:sreepvf.agriculture@gmail.com">sreepvf.agriculture@gmail.com</a></p>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>
