@@ -1,0 +1,49 @@
+/* utilities.css — small single-purpose helpers. Only file where !important is allowed. */
+
+/* Image placeholder: applied to <img> elements whose real asset hasn't been supplied yet.
+   images/placeholder.svg is the src; this just guarantees a visible, labeled box even if the
+   SVG fails to load, and forces a sane aspect box so layout doesn't collapse. */
+.img-placeholder {
+  background: var(--color-placeholder-bg);
+  border: 1px dashed var(--color-placeholder-border);
+  object-fit: cover;
+}
+
+/* Background-image placeholder: applied to elements that use CSS background-image in the
+   original design (hero slides, section backgrounds). Swap the background-image on the element
+   itself once a real asset is supplied; this class just makes the empty slot visible. */
+.bg-placeholder {
+  background-color: var(--color-placeholder-bg);
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      var(--color-placeholder-border) 0,
+      var(--color-placeholder-border) 2px,
+      transparent 2px,
+      transparent 14px
+    );
+  position: relative;
+}
+
+.bg-placeholder::after {
+  content: attr(data-placeholder-label);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-3);
+  color: var(--color-placeholder-text);
+  font-size: 13px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.text-accent {
+  color: var(--color-accent) !important; /* used inline where a single word needs the brand accent color, e.g. within a heading */
+}
+
+.d-none-important {
+  display: none !important; /* forces visual hide even over a component's own inline/display rules, e.g. JS-toggled state resets */
+}

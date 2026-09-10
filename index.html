@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SreePVF</title>
+  <link rel="canonical" href="https://sreepvf.org/">
+  <meta name="robots" content="max-image-preview:large">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <!-- Bootstrap 5, exact pinned version — the default responsive layer -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Bootstrap Icons, exact pinned version — small UI glyphs (mail, chevrons, calendar, etc.) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Google Fonts: Poppins, exact family/weights used by the original site -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/utilities.css">
+</head>
+<body>
+
+  <div id="site-header" data-include="partials/header.html"></div>
+
+  <!-- PAGE-CONTENT:START -->
+  <main>
+
+    <!-- Hero: originally a 2-slide nivo-slider ("Biomedical Sciences" / "Agricultural Sciences").
+         Rebuilt as a Bootstrap carousel, autoplaying every 4s, 100vh, with placeholder backgrounds. -->
+    <section id="heroCarousel" class="carousel slide hero-carousel p-0" data-bs-ride="carousel" data-bs-interval="4000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="hero-slide bg-placeholder" data-image-slot="hero-slide-biomedical-bg" data-placeholder-label="Hero background — Biomedical Sciences (1920×1080 recommended)">
+            <div class="container-custom hero-content">
+              <p class="hero-eyebrow">Research Grants</p>
+              <h2>Biomedical Sciences</h2>
+              <p>SreePVF supports &ldquo;bench to bedside&rdquo; translational research with the aim of bridging the gap between fundamental scientific discoveries and their application in clinical settings for the benefit of patients.</p>
+              <a href="biomedical-science.html" class="btn-outline-light-brand">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="hero-slide bg-placeholder" data-image-slot="hero-slide-agricultural-bg" data-placeholder-label="Hero background — Agricultural Sciences (1920×1080 recommended)">
+            <div class="container-custom hero-content">
+              <p class="hero-eyebrow">Research Grants</p>
+              <h2>Agricultural Sciences</h2>
+              <p>SreePVF seeks to support innovative research proposals that can positively impact the farming community and help address the challenges faced by farmers in India.</p>
+              <a href="agricultural-science.html" class="btn-outline-light-brand">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-arrow"><i class="bi bi-chevron-left"></i></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-arrow"><i class="bi bi-chevron-right"></i></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </section>
+
+    <!-- Latest Announcements ticker -->
+    <div class="container-custom">
+      <div class="ticker-bar">
+        <div class="ticker-badge">Latest Announcements</div>
+        <div class="ticker-text">The results of the final round of the 2026 Sree Ramakrishna Paramahamsa Agriculture Grant have been communicated to all applicants</div>
+      </div>
+    </div>
+
+    <!-- About Us -->
+    <section class="split-section">
+      <div class="container-custom">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="split-image-collage">
+              <img src="images/placeholder.svg" class="img-placeholder collage-back" data-image-slot="about-collage-back" alt="Soil and a young plant seedling, representing agricultural research">
+              <img src="images/placeholder.svg" class="img-placeholder collage-front" data-image-slot="about-collage-front" alt="Gloved hand examining petri dishes in a laboratory">
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <span class="eyebrow">About Us</span>
+            <h2>Welcome to SreePVF</h2>
+            <p>We believe that India&rsquo;s potential for greatness lies in nurturing the talent of its people. Our mission is to inspire and enable talented researchers to generate knowledge and develop innovative solutions to address contemporary problems in medicine and agriculture. We believe in sustainable solutions that are of high quality, but low cost, and we are committed to making a positive impact on society.</p>
+            <a href="about-us.html" class="btn-brand">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Focus areas -->
+    <section class="grants-section">
+      <div class="container-custom">
+        <div class="grants-heading-row">
+          <div>
+            <span class="eyebrow">Inspiring India for a Better Tomorrow</span>
+            <h2 class="mb-0">We aim for the scientific advancement of India</h2>
+          </div>
+          <a href="research-grants.html" class="btn-brand">Explore Grants</a>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <div class="grant-card">
+              <img src="images/placeholder.svg" class="img-placeholder grant-icon" data-image-slot="grant-icon-biomedical" alt="Biomedical Sciences icon">
+              <h3>Biomedical Sciences</h3>
+              <p>Our Biomedical Sciences research grant program offers a three-year research grant of up to Rs 3 crores for &ldquo;bench-bedside&rdquo; translational research.</p>
+              <a href="biomedical-science.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="grant-card">
+              <img src="images/placeholder.svg" class="img-placeholder grant-icon" data-image-slot="grant-icon-agricultural" alt="Agricultural Sciences icon">
+              <h3>Agricultural Sciences</h3>
+              <p>Our Agricultural research grant provides 50-lakh over two years to individuals and institutions whose work aligns with our mission to improve agriculture practices and promote sustainable solutions in the field.</p>
+              <a href="agricultural-science.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats + Science with Purpose -->
+    <section class="purpose-section">
+      <div class="container-custom">
+        <div class="stats-row">
+          <div class="stat-item">
+            <img src="images/placeholder.svg" class="img-placeholder stat-icon" data-image-slot="stats-icon-grants" alt="Grants awarded icon">
+            <div>
+              <div class="stat-number">&#8377;23cr+</div>
+              <div>In Grants awarded</div>
+            </div>
+          </div>
+          <div class="stat-item">
+            <img src="images/placeholder.svg" class="img-placeholder stat-icon" data-image-slot="stats-icon-applications" alt="Applications received icon">
+            <div>
+              <div class="stat-number">1330+</div>
+              <div>Applications received</div>
+            </div>
+          </div>
+          <div class="stat-item">
+            <img src="images/placeholder.svg" class="img-placeholder stat-icon" data-image-slot="stats-icon-institutes" alt="Applicant institutes icon">
+            <div>
+              <div class="stat-number">500+</div>
+              <div>Applicant institutes</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row video-purpose-row align-items-center">
+          <div class="col-12 col-lg-6">
+            <div class="video-frame bg-placeholder" data-image-slot="video-thumbnail" data-placeholder-label="Video — Chadalawada's Biography English (YouTube embed)">
+              <span class="carousel-arrow" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);"><i class="bi bi-play-fill"></i></span>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <h2>Science with Purpose</h2>
+            <div class="purpose-card">
+              <p class="mb-0">At the heart of our work at SreePVF lies a simple belief that science is the way forward to navigate the world&rsquo;s most pressing challenges. By funding translational research, fostering collaborations, and supporting young scientists, we bridge the gap between ideas and impact</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Mission -->
+    <section class="section-dark">
+      <div class="container-custom">
+        <div class="row align-items-center g-5">
+          <div class="col-12 col-lg-6">
+            <h2>Our Mission at SreePVF</h2>
+            <p>At SreePVF, we aim to lead the way in promoting innovation and progress in medicine, agriculture, education, preventive health care, and environment. We are dedicated to making a difference in the lives of people by contributing to society through our philanthropic activities. Our ultimate goal is to be an essential part of the nation-building process.</p>
+            <ul class="check-list">
+              <li><span class="check-icon"><i class="bi bi-check-lg"></i></span> Inspire and encourage scientists, farmers and entrepreneurs</li>
+              <li><span class="check-icon"><i class="bi bi-check-lg"></i></span> Promote innovation and creativity on forefronts of scientific research</li>
+              <li><span class="check-icon"><i class="bi bi-check-lg"></i></span> Fast track building a healthy and advanced India.</li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-6">
+            <img src="images/placeholder.svg" class="img-placeholder w-100" data-image-slot="mission-photo" alt="Founders administering a polio vaccine drop to a child at a community health event">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet the Founders -->
+    <section class="split-section">
+      <div class="container-custom">
+        <div class="row align-items-center g-5">
+          <div class="col-12 col-lg-6">
+            <span class="eyebrow">Giving As A Way Of Life</span>
+            <h2>Meet the Founders</h2>
+            <p>SreePVF was established by Dr. Chadalawada Sudha and Dr. Chadalawada Nageswara Rao, both successful medical professionals and alumni of prestigious institutes such as Harvard Medical College and Tufts University, respectively. After returning from the USA in 1978, they established the popular tertiary health care center, &ldquo;Pinnamaneni Poly Clinic,&rdquo; in Vijayawada, a small town in those days. Driven by their passion for social work and their commitment to making a difference in the areas of healthcare, public health, and education, they founded SreePVF with the aim of contributing to society and the nation.</p>
+            <a href="founders.html" class="btn-brand">Read More</a>
+          </div>
+          <div class="col-12 col-lg-6">
+            <img src="images/placeholder.svg" class="img-placeholder w-100" data-image-slot="founders-photo" alt="Dr. Chadalawada Nageswara Rao and Dr. Chadalawada Sudha, co-founders of SreePVF">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials carousel: 5 slides, autoplay every 4s, arrows -->
+    <section class="testimonial-section">
+      <div class="container-custom">
+        <div class="row align-items-center g-5">
+          <div class="col-12 col-lg-5">
+            <div class="testimonial-avatars">
+              <div class="avatar-blob"></div>
+              <img src="images/placeholder.svg" class="img-placeholder avatar-img" data-image-slot="testimonial-avatar-1" alt="Dr Ramesh V Sonti">
+              <img src="images/placeholder.svg" class="img-placeholder avatar-img" data-image-slot="testimonial-avatar-2" alt="Professor L S Shashidhara">
+              <img src="images/placeholder.svg" class="img-placeholder avatar-img" data-image-slot="testimonial-avatar-3" alt="Professor D Balasubramanian">
+              <img src="images/placeholder.svg" class="img-placeholder avatar-img" data-image-slot="testimonial-avatar-4" alt="Dr. Chadalawada Sudha">
+              <img src="images/placeholder.svg" class="img-placeholder avatar-img" data-image-slot="testimonial-avatar-5" alt="Dr. Chadalawada Nageswara Rao">
+            </div>
+          </div>
+          <div class="col-12 col-lg-7">
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+              <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                  <i class="bi bi-quote testimonial-quote-marks"></i>
+                  <p class="testimonial-quote-text">&ldquo;The Sree PVF grants in the agriculture sector are aimed at supporting last-mile accomplishment for innovative technological solutions to problems of the farming community, in particular the small farmers. The two calls that have been concluded so far have attracted a lot of interest from researchers and several innovative projects have been selected for funding.&rdquo;</p>
+                  <p class="testimonial-name">Dr Ramesh V Sonti</p>
+                  <p class="testimonial-title">Chair, Agricultural Committee</p>
+                </div>
+
+                <div class="carousel-item">
+                  <i class="bi bi-quote testimonial-quote-marks"></i>
+                  <p class="testimonial-quote-text">&ldquo;As the Indian S&amp;T community is growing and their research outcome is diversifying, it is important that we diversify source and method of funding. Particularly, to ensure that the benefits of the research outcome help to alleviate the suffering of common people. In this context, the philanthropic contribution of SreePVF to Indian S&amp;T is immensely valuable. The SreePVF awards large grants allowing the researchers to use them at their discretion as needed for their research. Fund flow is also carefully monitored so that at no time researchers face a cashless situation. This initiative from the pious couple Drs Sudha and Nageswararao is unique and hopes to trigger more such philanthropic contributions to Indian science&rdquo;</p>
+                  <p class="testimonial-name">Professor L S Shashidhara</p>
+                  <p class="testimonial-title">Science advisor and member of Biomedical and Agricultural committees</p>
+                </div>
+
+                <div class="carousel-item">
+                  <i class="bi bi-quote testimonial-quote-marks"></i>
+                  <p class="testimonial-quote-text">India made friends with science since the day it became free (when it was financially a &lsquo;basket case&rsquo;), and today we are among the top five economic powers in the globe. This became possible due to our friendship with science and technology. Seventy years later, it is time for not just the governments, but private individuals and Foundations in India too, to make friends with science and start offering research grants. It is against this backdrop that the SreePV Foundation of Vijayawada, Andhra Pradesh, has initiated a small initiative in supporting research in biological sciences.</p>
+                  <p class="testimonial-name">Professor D&nbsp;Balasubramanian</p>
+                  <p class="testimonial-title">Chair, Biomedical Sciences</p>
+                </div>
+
+                <div class="carousel-item">
+                  <i class="bi bi-quote testimonial-quote-marks"></i>
+                  <p class="testimonial-quote-text">&ldquo;My Philosophy is to give and give my Wealth be it Material or be it Spiritual&rdquo;</p>
+                  <p class="testimonial-name">Dr. Chadalawada Sudha</p>
+                  <p class="testimonial-title">Co-founder</p>
+                </div>
+
+                <div class="carousel-item">
+                  <i class="bi bi-quote testimonial-quote-marks"></i>
+                  <p class="testimonial-quote-text">&ldquo;Millions across the Globe are living with a hope for a better tomorrow. Inspire, Insipre and Inspire to Dream and Realise&rdquo;</p>
+                  <p class="testimonial-name">Dr. Chadalawada Nageswara Rao</p>
+                  <p class="testimonial-title">Co-Founder</p>
+                </div>
+
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-arrow"><i class="bi bi-chevron-left"></i></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-arrow"><i class="bi bi-chevron-right"></i></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Events carousel: 4 slides, autoplay every 4s, arrows -->
+    <section class="events-section">
+      <div class="container-custom">
+        <h2 class="text-center">Upcoming Events</h2>
+        <div id="eventsCarousel" class="carousel slide events-carousel" data-bs-ride="carousel" data-bs-interval="4000">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="event-card">
+                <div class="event-image">
+                  <img src="images/placeholder.svg" class="img-placeholder" data-image-slot="event-card-1-image" alt="Dr. Y.S. Rajasekhara Reddy Memorial Award ceremony photograph">
+                </div>
+                <div class="event-body">
+                  <h3 class="event-title">Dr. Y.S. Rajasekhara Reddy Memorial Award</h3>
+                  <div class="event-meta">
+                    <span><i class="bi bi-calendar-event"></i> Sep 2, 2025</span>
+                    <span><i class="bi bi-geo-alt"></i> Hotel Daspalla Conference Hall, Hyderabad</span>
+                  </div>
+                  <p>Honorable Chief Minister of Telangana, Sri Revanth Reddy, presented the award. SreePVF&rsquo;s Founders Honored.</p>
+                  <a href="events.html" class="read-more">Learn More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="event-card">
+                <div class="event-image">
+                  <img src="images/placeholder.svg" class="img-placeholder" data-image-slot="event-card-2-image" alt="SreePVF Research Award Ceremony 2023 banner">
+                </div>
+                <div class="event-body">
+                  <h3 class="event-title">SreePVF&rsquo;s Research award Ceremony 2023</h3>
+                  <div class="event-meta">
+                    <span><i class="bi bi-calendar-event"></i> Mar 29, 2023</span>
+                    <span><i class="bi bi-geo-alt"></i> India Habitat Centre, New Delhi</span>
+                  </div>
+                  <p>Dr Jitendra Singh, Honourable Union Minister graced the research award ceremony as chief guest.</p>
+                  <a href="events.html" class="read-more">Learn More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="event-card">
+                <div class="event-image">
+                  <img src="images/placeholder.svg" class="img-placeholder" data-image-slot="event-card-3-image" alt="SreePVF Research Award Ceremony 2023 banner">
+                </div>
+                <div class="event-body">
+                  <h3 class="event-title">SreePVF&rsquo;s Research award Ceremony 2023</h3>
+                  <div class="event-meta">
+                    <span><i class="bi bi-calendar-event"></i> Mar 29, 2023</span>
+                    <span><i class="bi bi-geo-alt"></i> India Habitat Centre, New Delhi</span>
+                  </div>
+                  <p>Dr Jitendra Singh, Honourable Union Minister to grace the research award ceremony as chief guest.</p>
+                  <a href="events.html" class="read-more">Learn More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="event-card">
+                <div class="event-image">
+                  <img src="images/placeholder.svg" class="img-placeholder" data-image-slot="event-card-4-image" alt="SreePVF Research Award Ceremony 2023 banner">
+                </div>
+                <div class="event-body">
+                  <h3 class="event-title">SreePVF&rsquo;s Research award Ceremony 2023</h3>
+                  <div class="event-meta">
+                    <span><i class="bi bi-calendar-event"></i> Mar 29, 2023</span>
+                    <span><i class="bi bi-geo-alt"></i> India Habitat Centre, New Delhi</span>
+                  </div>
+                  <p>Dr Jitendra Singh, Honourable Union Minister to grace the research award ceremony as chief guest.</p>
+                  <a href="events.html" class="read-more">Learn More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#eventsCarousel" data-bs-slide="prev">
+            <span class="carousel-arrow"><i class="bi bi-chevron-left"></i></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#eventsCarousel" data-bs-slide="next">
+            <span class="carousel-arrow"><i class="bi bi-chevron-right"></i></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore News -->
+    <section class="news-section">
+      <div class="container-custom">
+        <h2>Explore News</h2>
+        <div class="row g-4">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="news-card">
+              <div class="news-image">
+                <img src="images/placeholder.svg" class="img-placeholder" data-image-slot="news-card-1-image" alt="Translation Accelerator Meet — Day 2 Plenary announcement graphic">
+              </div>
+              <div class="news-body">
+                <h3 class="h5">Translation Accelerator &ndash; Day 2 Plenary</h3>
+                <p>The plenary session on Day 2 of the Translation Accelerator&hellip;</p>
+                <a href="blog.html" class="read-more">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="news-card">
+              <div class="news-image">
+                <img src="images/placeholder.svg" class="img-placeholder" data-image-slot="news-card-2-image" alt="Translation Accelerator Meet — Day 1 Plenary announcement graphic">
+              </div>
+              <div class="news-body">
+                <h3 class="h5">Translation Accelerator &ndash; Day 1 Plenary</h3>
+                <p>At this year&rsquo;s Translation Accelerator Meeting, organised by SreePVF at&hellip;</p>
+                <a href="blog.html" class="read-more">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="news-card">
+              <div class="news-image">
+                <img src="images/placeholder.svg" class="img-placeholder" data-image-slot="news-card-3-image" alt="Professor P. K. Bose Memorial Award 2025 — Prof. Sachin Mandavgane">
+              </div>
+              <div class="news-body">
+                <h3 class="h5">Congratulations to Prof. Sachin Mandavgane on receiving the Professor P. K. Bose Memorial Award 2025.</h3>
+                <p>Prof. Sachin Mandavgane from Visvesvaraya National Institute of Technology (VNIT),&hellip;</p>
+                <a href="blog.html" class="read-more">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="news-card">
+              <div class="news-image">
+                <img src="images/placeholder.svg" class="img-placeholder" data-image-slot="news-card-4-image" alt="The Hindu news clipping on Dr. Shahid Rasool's climate-resilient beekeeping work">
+              </div>
+              <div class="news-body">
+                <h3 class="h5">Dr. Shahid Rasool&rsquo;s work on Climate-Resilient Beekeeping Featured in The Hindu</h3>
+                <p>SreePVF is pleased to share that the pioneering work of&hellip;</p>
+                <a href="blog.html" class="read-more">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="team-section">
+      <div class="container-custom">
+        <div class="team-row">
+          <div class="team-label">Science Advisor</div>
+          <div class="team-member">
+            <img src="images/placeholder.svg" class="img-placeholder" data-image-slot="science-advisor-photo" alt="Professor LS Shashidhara">
+            <h3 class="h6 mb-1">Professor LS Shashidhara</h3>
+            <p class="small mb-0">Director, National Centre for Biological Sciences; Professor (Biology), IISER Pune; Professor (Honorary), Ashoka University</p>
+          </div>
+        </div>
+        <div class="team-row">
+          <div class="team-label">Board Of Directors</div>
+          <div class="team-member">
+            <img src="images/placeholder.svg" class="img-placeholder" data-image-slot="board-director-1-photo" alt="Dr Prasad G Kilaru, MD">
+            <h3 class="h6 mb-1">Dr Prasad G Kilaru, MD</h3>
+            <p class="small mb-0">Plastic Surgeon, Washington Hospital &ndash; Fremont</p>
+          </div>
+          <div class="team-member">
+            <img src="images/placeholder.svg" class="img-placeholder" data-image-slot="board-director-2-photo" alt="Mr Pinnamaneni Trivikrama Prasad">
+            <h3 class="h6 mb-1">Mr Pinnamaneni Trivikrama Prasad</h3>
+            <p class="small mb-0">Managing Director &ndash; Nava Limited</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- PAGE-CONTENT:END -->
+
+  <div id="site-footer" data-include="partials/footer.html"></div>
+  <div id="floating-buttons" data-include="partials/floating-buttons.html"></div>
+
+  <!-- Bootstrap's JS bundle (nav collapse, dropdowns, carousels) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/include.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+/* variables.css — the one theming file. Values extracted from the live sreepvf.org (WordPress). */
+:root {
+  /* Colors */
+  --color-accent: #D55343;       /* coral/terracotta — eyebrow labels, "About Us", "Founders" */
+  --color-navy: #2B4959;         /* nav bar, buttons, CTA, ticker badge */
+  --color-navy-deep: #273341;    /* "Our Mission" section background */
+  --color-navy-footer: #1E2436;  /* footer background */
+  --color-gold: #EFC94C;         /* active nav link */
+  --color-text: #2B2B2B;
+  --color-text-muted: #5c6670;
+  --color-white: #FFFFFF;
+  --color-border: #e5e5e5;
+  --color-placeholder-bg: #dfe3e6;
+  --color-placeholder-border: #9aa5ad;
+  --color-placeholder-text: #5c6670;
+
+  /* Typography */
+  --font-family-base: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-size-base: 15px;
+  --line-height-base: 1.7;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+  --space-7: 64px;
+  --space-8: 96px;
+
+  /* Layout */
+  --container-max: 1320px;
+  --header-height: 96px;
+
+  /* Breakpoints (reference only — Bootstrap's own defaults are used in media queries) */
+  --bp-sm: 576px;
+  --bp-md: 768px;
+  --bp-lg: 992px;
+  --bp-xl: 1200px;
+  --bp-xxl: 1400px;
+}

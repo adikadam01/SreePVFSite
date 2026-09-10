@@ -1,0 +1,77 @@
+/* components.css — reusable visual components used on 2+ sections */
+
+.btn-brand {
+  display: inline-block;
+  padding: 20px 30px;
+  background: var(--color-navy);
+  color: var(--color-white);
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 0;
+}
+
+.btn-brand:hover {
+  background: var(--color-navy-deep);
+  color: var(--color-white);
+}
+
+.btn-outline-light-brand {
+  display: inline-block;
+  padding: 8px 20px;
+  background: var(--color-white);
+  color: var(--color-text);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border: none;
+}
+
+.btn-outline-light-brand:hover {
+  background: var(--color-navy);
+  color: var(--color-white);
+}
+
+.btn-link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: 600;
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+.btn-link-arrow:hover {
+  color: var(--color-accent);
+}
+
+/* Grant / focus-area cards */
+
+.grant-card {
+  background: var(--color-white);
+  padding: var(--space-5);
+  text-align: center;
+  height: 100%;
+}
+
+.grant-card .grant-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto var(--space-3);
+}
+
+.grant-card h3 {
+  margin-bottom: var(--space-3);
+}
+
+/* Announcement ticker badge already covered in layout.css (.ticker-badge) */
+
+/* Read More link used inside cards */
+.read-more {
+  color: var(--color-text);
+  font-weight: 600;
+  text-decoration: underline;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+}

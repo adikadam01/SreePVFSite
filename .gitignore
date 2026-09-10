@@ -1,0 +1,12 @@
+# OS cruft
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor cruft
+*.swp
+*.swo
+*~
+
+# Local Claude settings (personal, not shared)
+.claude/settings.local.json
