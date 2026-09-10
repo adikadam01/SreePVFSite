@@ -30,76 +30,87 @@
   <main>
 
     <!-- Page hero banner (shared pattern across all non-home pages) -->
-    <section class="page-hero bg-placeholder" data-image-slot="subpage-hero-bg" data-placeholder-label="Page hero background — shared across subpages (1920×500 recommended)">
+    <section class="page-hero bg-placeholder" data-image-slot="subpage-hero-bg" data-placeholder-label="Page hero background — shared across subpages (1920×500 recommended)"></section>
+
+    <!-- Page title: a plain left-aligned heading below the hero band, matching the live site. -->
+    <section class="page-title-section pb-0">
       <div class="container-custom">
-        <h1 class="page-hero-title">Meet our <span class="text-accent">Founders</span></h1>
+        <h2 class="page-title">Meet our Founders</h2>
       </div>
     </section>
 
     <section class="founders-section">
       <div class="container-custom">
 
-        <!-- Founder 1: Dr Chadalawada Sudha -->
-        <div class="founder-profile row g-5">
-          <div class="col-12 col-lg-4">
-            <img src="images/placeholder.svg" class="img-placeholder w-100 founder-photo" data-image-slot="founder-sudha-photo" alt="Dr Chadalawada Sudha">
-          </div>
-          <div class="col-12 col-lg-8">
-            <h2>Dr Chadalawada Sudha</h2>
-            <p>Dr. Chadalawada Sudha is a highly accomplished Obstetrician and Gynecologist with an illustrious career spanning over five decades. Her dedication and commitment to the medical field have been an inspiration to many, and she continues to be an influential figure in the industry. Her passion for improving the lives of others has been a driving force throughout her career, and she has dedicated herself to supporting research and technology through grants. Dr. Sudha&rsquo;s deep commitment to social responsibility and philanthropy led her to establish SreePVF and donate 11,000 sq yards of land as a corpus fund to promote and support scientific research and technological innovation that can benefit society at large. Under her leadership, SreePVF has launched several innovative initiatives, including the Sree Ramakrishna Paramahamsa Research Grant, which has provided critical funding and support to researchers and groups engaged in translational research in biomedical and agricultural sciences. In addition to her work with SreePVF, Dr. Sudha is actively involved in several other social and philanthropic initiatives, including programs aimed at improving healthcare and education in underserved communities. Her unwavering dedication to social welfare and expertise in the biomedical sciences make her a true champion for the betterment of society.</p>
-            <p>Dr. Sudha&rsquo;s track record of brilliant academic achievements and professional accomplishments, combined with her devotion to building a better India, exemplifies the spirit of &ldquo;Janani Janma Bhumischa, Swargadapi Gariyasi&rdquo; or &ldquo;Mother and motherland are greater than heaven.&rdquo; She is a true inspiration to her colleagues and students and a testament to the fact that individual abilities and performances attain rare nobility and dignity when they contribute to the wholesome benefit of society at large.</p>
+        <!-- Founder 1: Dr Chadalawada Sudha. Live layout: centered photo + accent name, then a
+             row with a tall "career timeline" graphic on the left (a single baked-in image on the
+             live site — not real markup, see IMAGE-MANIFEST.md) and bio text + lists on the right. -->
+        <div class="founder-profile">
+          <img src="images/placeholder.svg" class="img-placeholder founder-photo-centered" data-image-slot="founder-sudha-photo" alt="Dr Chadalawada Sudha">
+          <h3 class="founder-name">Dr Chadalawada Sudha</h3>
 
-            <h3>Established:</h3>
-            <ul class="info-list">
-              <li><strong>Pinnamaneni Poly Clinic:</strong> Dr. Sudha established this prestigious tertiary healthcare institute and extended her activities to the medico-social arena with commendable zeal and determination. This hospital provided free medical care for 10% of inpatients and 40% of outpatients for 25 years.</li>
-              <li><strong>&ldquo;WATCH&rdquo; (Women and the Child Health) foundation:</strong> With the goal of serving the rural populace, Dr. Sudha formed the WATCH foundation. The foundation adopted about 100 villages in four mandals (tahsils) near Vijayawada in Krishna District, Andhra Pradesh. They organized free medical camps regularly to help needy people at their doorstep. Another significant contribution in the area of public health was the foundation&rsquo;s initiative to construct toilets in many schools in these villages in collaboration with the Red Cross Society of Gannavaram branch. About 5000 children were immunized for Polio prior to the Pulse Polio program, and another 6000 for Hepatitis-B, free of cost.</li>
-              <li><strong>Dr. Pinnamaneni and Smt. Seethadevi Foundation:</strong> Dr. Sudha established this foundation in parent&rsquo;s name which is known for awarding eminent individuals in Literature, Culture, Fine Arts, Medicine, Science, Sports, Social Services, etc., with a cash award of rupees five lakhs and a citation.</li>
-              <li><strong>Dr. Pinnamaneni Siddhartha Institute of Medical Sciences and Drs. Sudha &amp; Nageswara Rao Siddhartha Institute of Dental Sciences:</strong> Dr. Sudha and her family donated 31.3 acres of land near Gannavaram for the establishment of these medical institutes.</li>
-              <li><strong>Sree Padmavathi Venkateswara Foundation:</strong> To serve our nation on a larger scale</li>
-            </ul>
+          <div class="row g-5">
+            <div class="col-12 col-lg-4">
+              <img src="images/placeholder.svg" class="img-placeholder w-100 founder-timeline" data-image-slot="founder-sudha-timeline" alt="Dr Chadalawada Sudha — educational and career timeline">
+            </div>
+            <div class="col-12 col-lg-8">
+              <p>Dr. Chadalawada Sudha is a highly accomplished Obstetrician and Gynecologist with an illustrious career spanning over five decades. Her dedication and commitment to the medical field have been an inspiration to many, and she continues to be an influential figure in the industry. Her passion for improving the lives of others has been a driving force throughout her career, and she has dedicated herself to supporting research and technology through grants. Dr. Sudha&rsquo;s deep commitment to social responsibility and philanthropy led her to establish SreePVF and donate 11,000 sq yards of land as a corpus fund to promote and support scientific research and technological innovation that can benefit society at large. Under her leadership, SreePVF has launched several innovative initiatives, including the Sree Ramakrishna Paramahamsa Research Grant, which has provided critical funding and support to researchers and groups engaged in translational research in biomedical and agricultural sciences. In addition to her work with SreePVF, Dr. Sudha is actively involved in several other social and philanthropic initiatives, including programs aimed at improving healthcare and education in underserved communities. Her unwavering dedication to social welfare and expertise in the biomedical sciences make her a true champion for the betterment of society.</p>
+              <p>Dr. Sudha&rsquo;s track record of brilliant academic achievements and professional accomplishments, combined with her devotion to building a better India, exemplifies the spirit of &ldquo;Janani Janma Bhumischa, Swargadapi Gariyasi&rdquo; or &ldquo;Mother and motherland are greater than heaven.&rdquo; She is a true inspiration to her colleagues and students and a testament to the fact that individual abilities and performances attain rare nobility and dignity when they contribute to the wholesome benefit of society at large.</p>
 
-            <h3>Awards:</h3>
-            <ul class="info-list">
-              <li>Five gold medals and the best outgoing student in her batch from Guntur Medical College in 1961.</li>
-              <li>Udyog Bharathi Puraskar award by Delhi Telugu Academy</li>
-              <li>Kalaprapurna Dr. Paidi Lakshmaiah, Dr. P.L Sanjeeva Reddy Smaraka Pratibha Puraskaram</li>
-              <li>Ugadi Puraskar Award by Madras Telugu Academy</li>
-            </ul>
+              <h4 class="founder-subheading">Established:</h4>
+              <ul class="info-list">
+                <li><strong>Pinnamaneni Poly Clinic:</strong> Dr. Sudha established this prestigious tertiary healthcare institute and extended her activities to the medico-social arena with commendable zeal and determination. This hospital provided free medical care for 10% of inpatients and 40% of outpatients for 25 years.</li>
+                <li><strong>&ldquo;WATCH&rdquo; (Women and the Child Health) foundation:</strong> With the goal of serving the rural populace, Dr. Sudha formed the WATCH foundation. The foundation adopted about 100 villages in four mandals (tahsils) near Vijayawada in Krishna District, Andhra Pradesh. They organized free medical camps regularly to help needy people at their doorstep. Another significant contribution in the area of public health was the foundation&rsquo;s initiative to construct toilets in many schools in these villages in collaboration with the Red Cross Society of Gannavaram branch. About 5000 children were immunized for Polio prior to the Pulse Polio program, and another 6000 for Hepatitis-B, free of cost.</li>
+                <li><strong>Dr. Pinnamaneni and Smt. Seethadevi Foundation:</strong> Dr. Sudha established this foundation in parent&rsquo;s name which is known for awarding eminent individuals in Literature, Culture, Fine Arts, Medicine, Science, Sports, Social Services, etc., with a cash award of rupees five lakhs and a citation.</li>
+                <li><strong>Dr. Pinnamaneni Siddhartha Institute of Medical Sciences and Drs. Sudha &amp; Nageswara Rao Siddhartha Institute of Dental Sciences:</strong> Dr. Sudha and her family donated 31.3 acres of land near Gannavaram for the establishment of these medical institutes.</li>
+                <li><strong>Sree Padmavathi Venkateswara Foundation:</strong> To serve our nation on a larger scale</li>
+              </ul>
 
-            <h3>Memberships in prestigious associations:</h3>
-            <div class="memberships-row bg-placeholder" data-image-slot="founder-sudha-memberships-logos" data-placeholder-label="Member association logos (row)" style="min-height:80px;"></div>
+              <h4 class="founder-subheading">Awards:</h4>
+              <ul class="info-list">
+                <li>Five gold medals and the best outgoing student in her batch from Guntur Medical College in 1961.</li>
+                <li>Udyog Bharathi Puraskar award by Delhi Telugu Academy</li>
+                <li>Kalaprapurna Dr. Paidi Lakshmaiah, Dr. P.L Sanjeeva Reddy Smaraka Pratibha Puraskaram</li>
+                <li>Ugadi Puraskar Award by Madras Telugu Academy</li>
+              </ul>
+
+              <h4 class="founder-subheading">Memberships in prestigious associations:</h4>
+            </div>
           </div>
         </div>
 
-        <!-- Founder 2: Dr. Chadalawada Nageswara Rao -->
-        <div class="founder-profile row g-5">
-          <div class="col-12 col-lg-4">
-            <img src="images/placeholder.svg" class="img-placeholder w-100 founder-photo" data-image-slot="founder-nageswara-rao-photo" alt="Dr. Chadalawada Nageswara Rao">
-          </div>
-          <div class="col-12 col-lg-8">
-            <h2>Dr. Chadalawada Nageswara Rao</h2>
-            <p>Dr. Chadalawada Nageswara Rao is a well-known figure in the medical community, with an impressive career spanning several decades. Having been trained at the best institutions in the world, he chose to come back to his motherland and native place and started his Urology practice in India. He established a 120 bedded specialty hospital and a state-of-the-art Urology Centre at Pinnamaneni Poly Clinic in Vijayawada. Under his aegis, the clinic had a free clinic that served 40% of outpatients and 10% of inpatients free of charge. Dr. Rao also conducted rural programs for over 15 years, reaching 100 villages in 4 mandals in Krishna District and serving the poor and school children.</p>
-            <p>In addition to his work as a medical practitioner, Dr. Rao has also contributed significantly to the medical community. He served as a Council member, Honorary Secretary, and President-elect of the Urological Society of India. His impressive track record in urology led him to become the National President of the Urological Society of India after serving as a Governing Committee Member for three years and Honorary Secretary for four years.</p>
-            <p>Dr. Rao&rsquo;s impact extends beyond the field of urology. He was instrumental in bringing a team of 25-30 doctors from Padua University, the oldest medical university in Italy, to Dr. Pinnamaneni Siddhartha Institute of Medical Sciences &amp; Research Foundation for five years to perform free surgeries for needy patients. Today, Dr. Rao is the Director-General for Dr. Pinnamaneni Siddhartha Institute of Medical Sciences &amp; Research Foundation, and Drs. Sudha &amp; Nageswara Rao Siddhartha Institute of Dental Sciences. In addition to his academic achievements, he also started a DNB course in Urology and produced twelve post-MS candidates who are now qualified urologists with DNB qualifications.</p>
-            <p>Dr. Rao&rsquo;s career and accomplishments inspire many young people aspiring to make significant contributions to their chosen fields, proving that with hard work and dedication, anyone can achieve their goals, no matter where they come from.</p>
+        <!-- Founder 2: Dr. Chadalawada Nageswara Rao — same live pattern as above. -->
+        <div class="founder-profile">
+          <img src="images/placeholder.svg" class="img-placeholder founder-photo-centered" data-image-slot="founder-nageswara-rao-photo" alt="Dr. Chadalawada Nageswara Rao">
+          <h3 class="founder-name">Dr. Chadalawada Nageswara Rao</h3>
 
-            <h3>Established:</h3>
-            <ul class="info-list">
-              <li><strong>APSOGUS (Andhra Pradesh Society of Genito-Urinary Surgeons), 1986:</strong> Dr. Rao is first person to start the state chapter of the Urological Society of India, named APSOGUS, which led to the formation of many other state chapters.</li>
-              <li><strong>Sree Padmavathi Venkateswara Foundation:</strong> To serve our nation on a larger scale</li>
-            </ul>
+          <div class="row g-5">
+            <div class="col-12 col-lg-4">
+              <img src="images/placeholder.svg" class="img-placeholder w-100 founder-timeline" data-image-slot="founder-nageswara-rao-timeline" alt="Dr. Chadalawada Nageswara Rao — educational and career timeline">
+            </div>
+            <div class="col-12 col-lg-8">
+              <p>Dr. Chadalawada Nageswara Rao is a well-known figure in the medical community, with an impressive career spanning several decades. Having been trained at the best institutions in the world, he chose to come back to his motherland and native place and started his Urology practice in India. He established a 120 bedded specialty hospital and a state-of-the-art Urology Centre at Pinnamaneni Poly Clinic in Vijayawada. Under his aegis, the clinic had a free clinic that served 40% of outpatients and 10% of inpatients free of charge. Dr. Rao also conducted rural programs for over 15 years, reaching 100 villages in 4 mandals in Krishna District and serving the poor and school children.</p>
+              <p>In addition to his work as a medical practitioner, Dr. Rao has also contributed significantly to the medical community. He served as a Council member, Honorary Secretary, and President-elect of the Urological Society of India. His impressive track record in urology led him to become the National President of the Urological Society of India after serving as a Governing Committee Member for three years and Honorary Secretary for four years.</p>
+              <p>Dr. Rao&rsquo;s impact extends beyond the field of urology. He was instrumental in bringing a team of 25-30 doctors from Padua University, the oldest medical university in Italy, to Dr. Pinnamaneni Siddhartha Institute of Medical Sciences &amp; Research Foundation for five years to perform free surgeries for needy patients. Today, Dr. Rao is the Director-General for Dr. Pinnamaneni Siddhartha Institute of Medical Sciences &amp; Research Foundation, and Drs. Sudha &amp; Nageswara Rao Siddhartha Institute of Dental Sciences. In addition to his academic achievements, he also started a DNB course in Urology and produced twelve post-MS candidates who are now qualified urologists with DNB qualifications.</p>
+              <p>Dr. Rao&rsquo;s career and accomplishments inspire many young people aspiring to make significant contributions to their chosen fields, proving that with hard work and dedication, anyone can achieve their goals, no matter where they come from.</p>
 
-            <h3>Awards:</h3>
-            <p>Dr. Rao received the Urology Gold Medal in 1999 for his outstanding contribution to Urology. He delivered the prestigious Himadri Sarkar Memorial Oration in their 32nd Annual conference held at Bhubaneswar. Dr. Rao also delivered another prestigious oration conducted by the South Zone of the Urological Society of India, Professor H.S. Bhatt Oration in 2002. Dr. Rao was the recipient of the Ugadi Puraskar award by Madras Telugu Academy in 1994, along with Dr. Sudha, for their dedicated work in their profession. Dr. Rao&rsquo;s achievements were honored when he was conferred with the &lsquo;Degree of Doctor of Letters&rsquo; Honoris Causa on 18th November 2017 by Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya (SCSVMV University) at Kanchipuram, Tamil Nadu.</p>
+              <h4 class="founder-subheading">Established:</h4>
+              <ul class="info-list">
+                <li><strong>APSOGUS (Andhra Pradesh Society of Genito-Urinary Surgeons), 1986:</strong> Dr. Rao is first person to start the state chapter of the Urological Society of India, named APSOGUS, which led to the formation of many other state chapters.</li>
+                <li><strong>Sree Padmavathi Venkateswara Foundation:</strong> To serve our nation on a larger scale</li>
+              </ul>
 
-            <h3>Publications:</h3>
-            <p>Dr. Rao has published many articles and presented numerous papers in National &amp; International Journals and meetings. Despite growing up in a small town, Dr. Nageswara Rao&rsquo;s academic zeal was never inhibited. Throughout his career, he has made significant contributions to the field of urology, with over one hundred scientific papers published in journals, books, and presented at national and international conferences.</p>
+              <h4 class="founder-subheading">Awards:</h4>
+              <p>Dr. Rao received the Urology Gold Medal in 1999 for his outstanding contribution to Urology. He delivered the prestigious Himadri Sarkar Memorial Oration in their 32nd Annual conference held at Bhubaneswar. Dr. Rao also delivered another prestigious oration conducted by the South Zone of the Urological Society of India, Professor H.S. Bhatt Oration in 2002. Dr. Rao was the recipient of the Ugadi Puraskar award by Madras Telugu Academy in 1994, along with Dr. Sudha, for their dedicated work in their profession. Dr. Rao&rsquo;s achievements were honored when he was conferred with the &lsquo;Degree of Doctor of Letters&rsquo; Honoris Causa on 18th November 2017 by Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya (SCSVMV University) at Kanchipuram, Tamil Nadu.</p>
 
-            <h3>Books</h3>
-            <p>Pour Faire Rire (To Raise a Laugh), Scaling New Heights, Future Surgeons Key Surgical Skills, and Infectious Inspiration &amp; Pursuit of Excellence.</p>
+              <h4 class="founder-subheading">Publications:</h4>
+              <p>Dr. Rao has published many articles and presented numerous papers in National &amp; International Journals and meetings. Despite growing up in a small town, Dr. Nageswara Rao&rsquo;s academic zeal was never inhibited. Throughout his career, he has made significant contributions to the field of urology, with over one hundred scientific papers published in journals, books, and presented at national and international conferences.</p>
 
-            <h3>Memberships in prestigious associations:</h3>
-            <div class="memberships-row bg-placeholder" data-image-slot="founder-nageswara-rao-memberships-logos" data-placeholder-label="Member association logos (row)" style="min-height:80px;"></div>
+              <h4 class="founder-subheading">Books</h4>
+              <p>Pour Faire Rire (To Raise a Laugh), Scaling New Heights, Future Surgeons Key Surgical Skills, and Infectious Inspiration &amp; Pursuit of Excellence.</p>
+
+              <h4 class="founder-subheading">Memberships in prestigious associations:</h4>
+            </div>
           </div>
         </div>
 

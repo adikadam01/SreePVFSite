@@ -65,39 +65,26 @@
 }
 
 /* Page hero banner — used by every non-home page (About, Founders, Media, Contact, and the
-   Research/Grants/Awards pages) for the dark image-behind-heading strip under the nav. The
-   homepage's own big slider hero (.hero-carousel) is unrelated and stays in layout.css. */
+   Research/Grants/Awards pages) for the plain decorative image band under the nav. The live site
+   puts NO text/overlay inside this band on any subpage — it's purely a 400px-tall background
+   image (cover, top-center). The homepage's own big slider hero (.hero-carousel) is unrelated and
+   stays in layout.css. */
 
 .page-hero {
-  position: relative;
-  min-height: 260px;
-  display: flex;
-  align-items: center;
-  color: var(--color-white);
+  height: 400px;
+  background-size: cover;
+  background-position: 50% 0%;
 }
 
-.page-hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.55);
-  z-index: 1;
-}
+/* Page title — the plain, left-aligned heading each subpage carries below the hero band (an <h1>
+   or <h2> depending on the page, per the live site — see each page for which). Not centered, no
+   color split, except where a page's own heading explicitly adds a .text-accent span (e.g.
+   Contact Us's second "Contact Us" heading, which the live site also centers). */
 
-.page-hero .container-custom {
-  position: relative;
-  z-index: 2;
-}
-
-.page-hero-title {
-  color: var(--color-white);
-  font-size: 40px;
-  font-weight: 600;
-  margin: 0;
-}
-
-.page-hero-title .text-accent {
-  color: var(--color-accent) !important; /* matches live site's two-tone page titles, e.g. "Contact Us" */
+.page-title {
+  color: var(--color-text);
+  font-size: 30px;
+  font-weight: 500;
 }
 
 /* Announcement ticker badge already covered in layout.css (.ticker-badge) */

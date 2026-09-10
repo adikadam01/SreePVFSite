@@ -46,10 +46,10 @@ Same placeholder scheme as above (`images/placeholder.svg` + `data-image-slot`),
 |---|---|---|---|---|
 | `subpage-hero-bg` | Page hero banner background — shared by all five pages below (and reused by the Research/Grants/Awards pages) | `/wp-content/uploads/2023/03/Banner-Images.jpg` | `subpage-hero-banner.jpg` | ✅ |
 | `honoree-01-photo` … `honoree-28-photo` | About Us — honoree carousel (28 slides, Dr. Pinnamaneni and Smt. Seethadevi Foundation awardees 1989–2013+) | Each slide has its own source image on the live nivo-slider widget (`Image2023...` filenames); not individually captured — 28 distinct portraits | `honoree-01-photo.jpg` … `honoree-28-photo.jpg` | ⚠️ verify each against the live slideshow before use |
-| `founder-sudha-photo` | Founders — Dr Chadalawada Sudha portrait | not captured distinctly (page has several similar candidate images) | `founder-sudha-photo.jpg` | ⚠️ verify against live page |
-| `founder-sudha-memberships-logos` | Founders — Dr Sudha "Memberships in prestigious associations" logo row | live section renders with no visible content/images captured | `founder-sudha-memberships-logos.png` | ⚠️ live content not confirmed — re-check page before filling in |
-| `founder-nageswara-rao-photo` | Founders — Dr. Chadalawada Nageswara Rao portrait | not captured distinctly (page has several similar candidate images) | `founder-nageswara-rao-photo.jpg` | ⚠️ verify against live page |
-| `founder-nageswara-rao-memberships-logos` | Founders — Dr. Rao "Memberships in prestigious associations" logo row | live section renders with no visible content/images captured | `founder-nageswara-rao-memberships-logos.png` | ⚠️ live content not confirmed — re-check page before filling in |
+| `founder-sudha-photo` | Founders — Dr Chadalawada Sudha portrait (centered, ~322×320) | `/wp-content/uploads/2023/03/Dr-Sudha.png` | `founder-sudha-photo.png` | ✅ |
+| `founder-sudha-timeline` | Founders — Dr Sudha's career/education timeline graphic (left column, tall ~329×815 image, text baked into the image itself) | `/wp-content/uploads/2023/03/1-2.png` | `founder-sudha-timeline.png` | ✅ |
+| `founder-nageswara-rao-photo` | Founders — Dr. Chadalawada Nageswara Rao portrait (centered, ~279×372) | `/wp-content/uploads/2023/03/Dra.png` | `founder-nageswara-rao-photo.png` | ✅ |
+| `founder-nageswara-rao-timeline` | Founders — Dr. Rao's career/education timeline graphic (left column, tall ~329×815 image, text baked into the image itself) | `/wp-content/uploads/2023/03/Dr-C-Rao-Final.png` | `founder-nageswara-rao-timeline.png` | ✅ |
 | `gallery-photo-001` … `gallery-photo-095` | Picture Gallery — full photo grid (95 distinct photos; see individual rows below) | see individual rows | `gallery-photo-001.ext` … `gallery-photo-095.ext` | see individual rows |
 
 **Videos page note:** `videos.html` embeds the live site's real YouTube videos directly (published

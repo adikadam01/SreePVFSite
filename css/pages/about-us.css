@@ -1,0 +1,29 @@
+/* css/pages/about-us.css — page-unique overrides for about-us.html. */
+
+/* "Honoring Outstanding personalities..." heading: a small left-aligned label above the honoree
+   carousel, not a normal large centered h2 — matches the live site (19px, semibold, left). */
+.honorees-heading {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: var(--space-4);
+}
+
+/* Each honoree slide is a single full-width image (2:1) with a dark caption bar overlaid at the
+   bottom — not a side-by-side image+text layout. */
+.honoree-slide {
+  position: relative;
+  aspect-ratio: 2 / 1;
+  overflow: hidden;
+}
+
+.honoree-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: var(--color-white);
+  padding: var(--space-3) var(--space-4);
+  font-size: 14.4px;
+  line-height: 1.5;
+}
