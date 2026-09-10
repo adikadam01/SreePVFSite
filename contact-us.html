@@ -40,68 +40,76 @@
       <div class="container-custom">
         <h2 class="text-center mb-5">Contact <span class="text-accent">Us</span></h2>
 
-        <!-- Address / Call Us / Queries info cards -->
-        <div class="row g-4 mb-5">
-          <div class="col-12 col-md-4">
-            <div class="grant-card contact-info-card">
-              <img src="images/placeholder.svg" class="img-placeholder grant-icon" data-image-slot="contact-icon-address" alt="Address icon">
-              <h3>Address</h3>
-              <p class="mb-0" data-address-text>40-3-13, Gummadi Raja Gopala Rao Street, M.G. Road, Vijayawada-520 010, Andhra Pradesh, India</p>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="grant-card contact-info-card">
-              <img src="images/placeholder.svg" class="img-placeholder grant-icon" data-image-slot="contact-icon-call" alt="Call Us icon">
-              <h3>Call Us</h3>
-              <p class="mb-0"><a href="tel:+919866656456" data-phone-link data-phone-text>+91-9866656456</a></p>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="grant-card contact-info-card">
-              <img src="images/placeholder.svg" class="img-placeholder grant-icon" data-image-slot="contact-icon-queries" alt="Queries icon">
-              <h3>Queries</h3>
-              <p class="mb-0"><a href="mailto:sreepvfkrishna@gmail.com" data-email-link data-email-text>sreepvfkrishna@gmail.com</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-8">
+        <!-- "Leave A Message" form card: coral header strip + dark navy body, matching the live
+             site's form widget. Visual reproduction only — no backend to submit to yet. HTML5
+             required validation is wired; the button intentionally has no submit handler. -->
+        <div class="row mb-5">
+          <div class="col-12">
             <div class="contact-form-card">
-              <h3 class="text-center mb-4">Leave A Message</h3>
-              <!-- Visual reproduction only — no backend to submit to yet. HTML5 required
-                   validation is wired; the button intentionally has no submit handler. -->
-              <form>
-                <div class="mb-3">
-                  <label for="contactName" class="form-label">Name*</label>
-                  <input type="text" class="form-control" id="contactName" name="name" required>
-                </div>
-                <div class="mb-3">
-                  <label for="contactEmail" class="form-label">Email*</label>
-                  <input type="email" class="form-control" id="contactEmail" name="email" required>
-                </div>
-                <div class="mb-3">
-                  <label for="contactPhone" class="form-label">Phone Number</label>
-                  <input type="tel" class="form-control" id="contactPhone" name="phone">
-                </div>
-                <div class="mb-4">
-                  <label for="contactMessage" class="form-label">Message*</label>
-                  <textarea class="form-control" id="contactMessage" name="message" rows="5" required></textarea>
-                </div>
-                <div class="text-center">
-                  <button type="button" class="btn-brand">Submit</button>
-                </div>
-              </form>
+              <p class="contact-form-header">Leave A Message</p>
+              <div class="contact-form-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="contactName" class="form-label">Name <span class="required-mark">*</span></label>
+                    <input type="text" class="form-control" id="contactName" name="name" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="contactEmail" class="form-label">Email <span class="required-mark">*</span></label>
+                    <input type="email" class="form-control" id="contactEmail" name="email" required>
+                  </div>
+                  <div class="mb-3 field-narrow">
+                    <label for="contactPhone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="contactPhone" name="phone">
+                  </div>
+                  <div class="mb-4">
+                    <label for="contactMessage" class="form-label">Message <span class="required-mark">*</span></label>
+                    <textarea class="form-control" id="contactMessage" name="message" rows="5" required></textarea>
+                  </div>
+                  <button type="button" class="btn-submit">Submit</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="row justify-content-center mt-5">
-          <div class="col-12 col-lg-8 text-center">
-            <h3>Office Address</h3>
-            <p class="mb-1">Sree Padmavathi Venkateswara Foundation</p>
-            <p class="mb-0" data-address-text>40-3-13, Gummadi Raja Gopala Rao Street, M.G. Road, Vijayawada-520 010, Andhra Pradesh, India</p>
+        <!-- Address / Call Us / Queries tabs, matching the live site's tab widget (Address active
+             by default). Reuses Bootstrap's own tab component — already loaded, no new JS. -->
+        <ul class="nav nav-tabs contact-tabs" id="contactTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="tab-address-btn" data-bs-toggle="tab" data-bs-target="#tab-address" type="button" role="tab" aria-controls="tab-address" aria-selected="true">Address</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab-call-btn" data-bs-toggle="tab" data-bs-target="#tab-call" type="button" role="tab" aria-controls="tab-call" aria-selected="false">Call Us</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab-queries-btn" data-bs-toggle="tab" data-bs-target="#tab-queries" type="button" role="tab" aria-controls="tab-queries" aria-selected="false">Queries</button>
+          </li>
+        </ul>
+        <div class="tab-content contact-tab-content" id="contactTabContent">
+
+          <div class="tab-pane fade show active" id="tab-address" role="tabpanel" aria-labelledby="tab-address-btn">
+            <p class="tab-eyebrow mb-2"><span class="text-accent">Office</span> Address</p>
+            <p class="fw-bold mb-1">Sree Padmavathi Venkateswara Foundation</p>
+            <address class="mb-0" data-address-text>40-3-13, Gummadi Raja Gopala Rao Street, M.G. Road, Vijayawada-520 010, Andhra Pradesh, India</address>
           </div>
+
+          <div class="tab-pane fade" id="tab-call" role="tabpanel" aria-labelledby="tab-call-btn">
+            <div class="tel-list">
+              <a href="tel:+918662439567">+91-0866-243 9567</a>
+              <a href="tel:+919866656456" data-phone-link data-phone-text>+91-9866656456</a>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="tab-queries" role="tabpanel" aria-labelledby="tab-queries-btn">
+            <div class="query-list">
+              <p>General Queries: <a href="mailto:sreepvfkrishna@gmail.com" data-email-link data-email-text>sreepvfkrishna@gmail.com</a></p>
+              <p>Award Queries: <a href="mailto:sreepvfawards@gmail.com">sreepvfawards@gmail.com</a></p>
+              <p>Grant Queries:</p>
+              <p>(Biomedical Sciences) &ndash; <a href="mailto:sreepvfgrants@gmail.com">sreepvfgrants@gmail.com</a></p>
+              <p class="mb-0">(Agricultural Sciences) &ndash; <a href="mailto:sreepvf.agriculture@gmail.com">sreepvf.agriculture@gmail.com</a></p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>

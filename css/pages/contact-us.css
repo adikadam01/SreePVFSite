@@ -1,25 +1,104 @@
-/* css/pages/contact-us.css — page-unique overrides for contact-us.html. */
+/* css/pages/contact-us.css — page-unique overrides for contact-us.html.
+   Matches the live /contact-us/ page: a "Leave A Message" card (coral header strip + dark navy
+   body, white inputs, orange submit button) and an Address/Call Us/Queries tab widget below it. */
 
 .contact-form-card {
-  background: var(--color-white);
-  border: 1px solid var(--color-border);
+  border: none;
+}
+
+.contact-form-header {
+  background: var(--color-accent);
+  color: var(--color-white);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  padding: var(--space-3) var(--space-4);
+  margin: 0;
+}
+
+.contact-form-body {
+  background: var(--color-navy);
   padding: var(--space-5);
 }
 
-.contact-form-card .form-label {
+.contact-form-body .form-label {
+  color: rgba(255, 255, 255, 0.85);
   font-weight: 500;
 }
 
-.contact-form-card .form-control {
+.contact-form-body .form-control {
   border-radius: 0;
-  padding: 12px 16px;
+  border: 1px solid var(--color-border);
+  padding: 10px 14px;
 }
 
-.contact-info-card {
-  height: 100%;
+.contact-form-body .required-mark {
+  color: var(--color-accent);
 }
 
-.contact-info-card .grant-icon {
-  width: 56px;
-  height: 56px;
+.contact-form-body .field-narrow {
+  max-width: 320px;
+}
+
+/* The live site's Submit button is a plugin-default orange (#F46322) that doesn't appear
+   anywhere else in the site's palette — reproduced here, scoped to this page only, rather than
+   added to the shared variables.css palette. */
+.contact-form-body .btn-submit {
+  background: #F46322;
+  color: var(--color-white);
+  border: none;
+  border-radius: 0;
+  padding: 10px 28px;
+  font-weight: 500;
+}
+
+.contact-form-body .btn-submit:hover {
+  opacity: 0.9;
+  color: var(--color-white);
+}
+
+/* Address / Call Us / Queries tabs */
+
+.contact-tabs {
+  justify-content: center;
+  border-bottom: 1px solid var(--color-accent);
+  margin-bottom: var(--space-5);
+}
+
+.contact-tabs .nav-link {
+  border: none;
+  border-radius: 0;
+  font-weight: 700;
+  font-size: 19px;
+  padding: 14px 35px;
+  color: var(--color-accent);
+}
+
+.contact-tabs .nav-link.active {
+  color: var(--color-text);
+  background: none;
+}
+
+.contact-tab-content {
+  text-align: center;
+}
+
+.contact-tab-content .tab-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-tab-content address {
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.contact-tab-content .tel-list a,
+.contact-tab-content .query-list a {
+  display: block;
+  margin-bottom: var(--space-2);
+}
+
+.contact-tab-content .query-list p {
+  margin-bottom: var(--space-1);
 }

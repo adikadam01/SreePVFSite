@@ -50,9 +50,6 @@ Same placeholder scheme as above (`images/placeholder.svg` + `data-image-slot`),
 | `founder-sudha-memberships-logos` | Founders — Dr Sudha "Memberships in prestigious associations" logo row | live section renders with no visible content/images captured | `founder-sudha-memberships-logos.png` | ⚠️ live content not confirmed — re-check page before filling in |
 | `founder-nageswara-rao-photo` | Founders — Dr. Chadalawada Nageswara Rao portrait | not captured distinctly (page has several similar candidate images) | `founder-nageswara-rao-photo.jpg` | ⚠️ verify against live page |
 | `founder-nageswara-rao-memberships-logos` | Founders — Dr. Rao "Memberships in prestigious associations" logo row | live section renders with no visible content/images captured | `founder-nageswara-rao-memberships-logos.png` | ⚠️ live content not confirmed — re-check page before filling in |
-| `contact-icon-address` | Contact Us — "Address" info card icon | not captured (small inline icon asset) | `icon-contact-address.png` | ⚠️ verify against live page |
-| `contact-icon-call` | Contact Us — "Call Us" info card icon | not captured (small inline icon asset) | `icon-contact-call.png` | ⚠️ verify against live page |
-| `contact-icon-queries` | Contact Us — "Queries" info card icon | not captured (small inline icon asset) | `icon-contact-queries.png` | ⚠️ verify against live page |
 | `gallery-photo-001` … `gallery-photo-095` | Picture Gallery — full photo grid (95 distinct photos; see individual rows below) | see individual rows | `gallery-photo-001.ext` … `gallery-photo-095.ext` | see individual rows |
 
 **Videos page note:** `videos.html` embeds the live site's real YouTube videos directly (published

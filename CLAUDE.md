@@ -20,9 +20,11 @@ placement. This file adds the migration-specific rules and this project's Data D
 | Fact | Canonical value | Notes |
 |---|---|---|
 | Business name | Sree Padmavathi Venkateswara Foundation (SreePVF) | |
-| Phone | +91-9866656456 | from footer |
+| Phone | +91-9866656456 | from footer; site-config.js `phone` — the number used sitewide (header, footer) |
+| Phone (landline, Contact Us page only) | +91-0866-243 9567 | found only in the "Call Us" tab on /contact-us/, alongside the main mobile number — not used elsewhere on the live site, so not added to site-config.js |
 | WhatsApp | — | not used on the live site |
-| Email | sreepvfkrishna@gmail.com | also shown in header top bar |
+| Email | sreepvfkrishna@gmail.com | also shown in header top bar; site-config.js `email` — used sitewide |
+| Email (Contact Us page "Queries" tab only) | Award: sreepvfawards@gmail.com · Grant (Biomedical): sreepvfgrants@gmail.com · Grant (Agricultural): sreepvf.agriculture@gmail.com | found only on /contact-us/, alongside the main email as "General Queries" — not used elsewhere on the live site, so not added to site-config.js |
 | Address | 40-3-13, Gummadi Raja Gopala Rao Street, M.G. Road, Vijayawada-520 010, Andhra Pradesh, India | |
 | Hours | — | not published on the live site |
 | Social links | — | none linked on the homepage |
