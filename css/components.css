@@ -64,6 +64,42 @@
   margin-bottom: var(--space-3);
 }
 
+/* Page hero banner — used by every non-home page (About, Founders, Media, Contact, and the
+   Research/Grants/Awards pages) for the dark image-behind-heading strip under the nav. The
+   homepage's own big slider hero (.hero-carousel) is unrelated and stays in layout.css. */
+
+.page-hero {
+  position: relative;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+.page-hero .container-custom {
+  position: relative;
+  z-index: 2;
+}
+
+.page-hero-title {
+  color: var(--color-white);
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.page-hero-title .text-accent {
+  color: var(--color-accent) !important; /* matches live site's two-tone page titles, e.g. "Contact Us" */
+}
+
 /* Announcement ticker badge already covered in layout.css (.ticker-badge) */
 
 /* Read More link used inside cards */
