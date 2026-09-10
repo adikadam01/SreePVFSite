@@ -56,19 +56,22 @@
                 <form>
                   <div class="mb-3">
                     <label for="contactName" class="form-label">Name <span class="required-mark">*</span></label>
-                    <input type="text" class="form-control" id="contactName" name="name" required>
+                    <input type="text" class="form-control" id="contactName" name="name" placeholder="Name" required>
                   </div>
                   <div class="mb-3">
                     <label for="contactEmail" class="form-label">Email <span class="required-mark">*</span></label>
-                    <input type="email" class="form-control" id="contactEmail" name="email" required>
+                    <input type="email" class="form-control" id="contactEmail" name="email" placeholder="Email Address" required>
                   </div>
                   <div class="mb-3 field-narrow">
                     <label for="contactPhone" class="form-label">Phone Number</label>
-                    <input type="tel" class="form-control" id="contactPhone" name="phone">
+                    <div class="phone-input-group">
+                      <span class="phone-flag">&#127470;&#127475; <i class="bi bi-caret-down-fill" style="font-size:10px;"></i></span>
+                      <input type="tel" class="form-control" id="contactPhone" name="phone" placeholder="+91 81234 56789">
+                    </div>
                   </div>
                   <div class="mb-4">
                     <label for="contactMessage" class="form-label">Message <span class="required-mark">*</span></label>
-                    <textarea class="form-control" id="contactMessage" name="message" rows="5" required></textarea>
+                    <textarea class="form-control" id="contactMessage" name="message" rows="5" placeholder="Message" required></textarea>
                   </div>
                   <button type="button" class="btn-submit">Submit</button>
                 </form>

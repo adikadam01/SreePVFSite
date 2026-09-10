@@ -3,7 +3,7 @@
    body, white inputs, orange submit button) and an Address/Call Us/Queries tab widget below it. */
 
 .contact-form-card {
-  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .contact-form-header {
@@ -37,7 +37,31 @@
 }
 
 .contact-form-body .field-narrow {
-  max-width: 320px;
+  max-width: 280px;
+}
+
+/* Phone field: the live site uses the intl-tel-input plugin (flag + dial-code dropdown prefix).
+   The form doesn't submit anywhere (see note above), so a working country picker adds a JS
+   dependency for no real benefit — this reproduces the look with a static flag+caret prefix. */
+.phone-input-group {
+  position: relative;
+}
+
+.phone-input-group .phone-flag {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 15px;
+  color: var(--color-text-muted);
+  pointer-events: none;
+}
+
+.phone-input-group .form-control {
+  padding-left: 48px;
 }
 
 /* The live site's Submit button is a plugin-default orange (#F46322) that doesn't appear
