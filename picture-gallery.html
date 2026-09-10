@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Picture Gallery – SreePVF</title>
+  <link rel="canonical" href="https://sreepvf.org/picture-gallery/">
+  <meta name="robots" content="max-image-preview:large">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <!-- Bootstrap 5, exact pinned version — the default responsive layer -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Bootstrap Icons, exact pinned version — small UI glyphs (mail, chevrons, calendar, etc.) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Google Fonts: Poppins, exact family/weights used by the original site -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/pages/picture-gallery.css">
+</head>
+<body>
+
+  <div id="site-header" data-include="partials/header.html"></div>
+
+  <!-- PAGE-CONTENT:START -->
+  <main>
+
+    <!-- Page hero banner (shared pattern across all non-home pages) -->
+    <section class="page-hero bg-placeholder" data-image-slot="subpage-hero-bg" data-placeholder-label="Page hero background — shared across subpages (1920×500 recommended)">
+      <div class="container-custom">
+        <h1 class="page-hero-title">Picture Gallery</h1>
+      </div>
+    </section>
+
+    <!-- Gallery grid: 95 event photographs on the live site. Each thumbnail opens the shared
+         lightbox modal below (click-to-enlarge, reusing Bootstrap's modal component — no new
+         JS dependency). See js/pages/picture-gallery.js for the swap-in logic. -->
+    <section class="gallery-section">
+      <div class="container-custom">
+        <div class="row g-3">
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 1">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-001" alt="SreePVF event photograph 1">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 2">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-002" alt="SreePVF event photograph 2">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 3">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-003" alt="SreePVF event photograph 3">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 4">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-004" alt="SreePVF event photograph 4">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 5">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-005" alt="SreePVF event photograph 5">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 6">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-006" alt="SreePVF event photograph 6">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 7">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-007" alt="SreePVF event photograph 7">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 8">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-008" alt="SreePVF event photograph 8">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 9">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-009" alt="SreePVF event photograph 9">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 10">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-010" alt="SreePVF event photograph 10">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 11">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-011" alt="SreePVF event photograph 11">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 12">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-012" alt="SreePVF event photograph 12">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 13">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-013" alt="SreePVF event photograph 13">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 14">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-014" alt="SreePVF event photograph 14">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 15">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-015" alt="SreePVF event photograph 15">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 16">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-016" alt="SreePVF event photograph 16">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 17">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-017" alt="SreePVF event photograph 17">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 18">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-018" alt="SreePVF event photograph 18">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 19">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-019" alt="SreePVF event photograph 19">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 20">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-020" alt="SreePVF event photograph 20">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 21">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-021" alt="SreePVF event photograph 21">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 22">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-022" alt="SreePVF event photograph 22">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 23">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-023" alt="SreePVF event photograph 23">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 24">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-024" alt="SreePVF event photograph 24">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 25">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-025" alt="SreePVF event photograph 25">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 26">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-026" alt="SreePVF event photograph 26">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 27">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-027" alt="SreePVF event photograph 27">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 28">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-028" alt="SreePVF event photograph 28">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 29">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-029" alt="SreePVF event photograph 29">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 30">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-030" alt="SreePVF event photograph 30">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 31">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-031" alt="SreePVF event photograph 31">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 32">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-032" alt="SreePVF event photograph 32">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 33">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-033" alt="SreePVF event photograph 33">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 34">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-034" alt="SreePVF event photograph 34">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 35">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-035" alt="SreePVF event photograph 35">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 36">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-036" alt="SreePVF event photograph 36">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 37">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-037" alt="SreePVF event photograph 37">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 38">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-038" alt="SreePVF event photograph 38">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 39">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-039" alt="SreePVF event photograph 39">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 40">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-040" alt="SreePVF event photograph 40">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 41">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-041" alt="SreePVF event photograph 41">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 42">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-042" alt="SreePVF event photograph 42">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 43">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-043" alt="SreePVF event photograph 43">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 44">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-044" alt="SreePVF event photograph 44">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 45">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-045" alt="SreePVF event photograph 45">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 46">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-046" alt="SreePVF event photograph 46">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 47">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-047" alt="SreePVF event photograph 47">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 48">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-048" alt="SreePVF event photograph 48">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 49">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-049" alt="SreePVF event photograph 49">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 50">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-050" alt="SreePVF event photograph 50">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 51">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-051" alt="SreePVF event photograph 51">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 52">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-052" alt="SreePVF event photograph 52">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 53">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-053" alt="SreePVF event photograph 53">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 54">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-054" alt="SreePVF event photograph 54">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 55">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-055" alt="SreePVF event photograph 55">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 56">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-056" alt="SreePVF event photograph 56">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 57">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-057" alt="SreePVF event photograph 57">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 58">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-058" alt="SreePVF event photograph 58">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 59">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-059" alt="SreePVF event photograph 59">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 60">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-060" alt="SreePVF event photograph 60">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 61">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-061" alt="SreePVF event photograph 61">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 62">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-062" alt="SreePVF event photograph 62">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 63">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-063" alt="SreePVF event photograph 63">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 64">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-064" alt="SreePVF event photograph 64">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 65">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-065" alt="SreePVF event photograph 65">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 66">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-066" alt="SreePVF event photograph 66">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 67">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-067" alt="SreePVF event photograph 67">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 68">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-068" alt="SreePVF event photograph 68">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 69">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-069" alt="SreePVF event photograph 69">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 70">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-070" alt="SreePVF event photograph 70">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 71">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-071" alt="SreePVF event photograph 71">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 72">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-072" alt="SreePVF event photograph 72">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 73">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-073" alt="SreePVF event photograph 73">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 74">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-074" alt="SreePVF event photograph 74">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 75">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-075" alt="SreePVF event photograph 75">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 76">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-076" alt="SreePVF event photograph 76">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 77">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-077" alt="SreePVF event photograph 77">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 78">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-078" alt="SreePVF event photograph 78">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 79">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-079" alt="SreePVF event photograph 79">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 80">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-080" alt="SreePVF event photograph 80">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 81">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-081" alt="SreePVF event photograph 81">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 82">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-082" alt="SreePVF event photograph 82">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 83">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-083" alt="SreePVF event photograph 83">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 84">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-084" alt="SreePVF event photograph 84">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 85">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-085" alt="SreePVF event photograph 85">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 86">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-086" alt="SreePVF event photograph 86">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 87">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-087" alt="SreePVF event photograph 87">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 88">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-088" alt="SreePVF event photograph 88">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 89">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-089" alt="SreePVF event photograph 89">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 90">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-090" alt="SreePVF event photograph 90">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 91">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-091" alt="SreePVF event photograph 91">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 92">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-092" alt="SreePVF event photograph 92">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 93">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-093" alt="SreePVF event photograph 93">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 94">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-094" alt="SreePVF event photograph 94">
+            </button>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <button type="button" class="gallery-thumb-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" data-full-src="images/placeholder.svg" data-full-alt="SreePVF event photograph 95">
+              <img src="images/placeholder.svg" class="img-placeholder gallery-thumb" data-image-slot="gallery-photo-095" alt="SreePVF event photograph 95">
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Shared lightbox modal — one instance, image swapped in by js/pages/picture-gallery.js -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title h6 mb-0" id="galleryModalLabel">Picture Gallery</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="images/placeholder.svg" class="img-placeholder w-100" id="galleryModalImage" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <!-- PAGE-CONTENT:END -->
+
+  <div id="site-footer" data-include="partials/footer.html"></div>
+  <div id="floating-buttons" data-include="partials/floating-buttons.html"></div>
+
+  <!-- Bootstrap's JS bundle (nav collapse, dropdowns, carousels, modal) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/include.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pages/picture-gallery.js"></script>
+
+</body>
+</html>
